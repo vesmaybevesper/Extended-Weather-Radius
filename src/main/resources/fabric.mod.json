@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "weatherradiusextended",
+  "id": "EWR",
   "name": "Weather Radius Extended",
   "version": "${version}",
   "authors": ["VesMaybeVesper"],
