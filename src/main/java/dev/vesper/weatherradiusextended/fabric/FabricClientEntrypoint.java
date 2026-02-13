@@ -1,4 +1,4 @@
-package dev.vesper.modtemplate.fabric;
+package dev.vesper.weatherradiusextended.fabric;
 
 //? fabric {
 import dev.vesper.modtemplate.ModTemplate;

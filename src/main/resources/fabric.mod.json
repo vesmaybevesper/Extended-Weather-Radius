@@ -1,33 +1,29 @@
 {
   "schemaVersion": 1,
-  "id": "modtemplate",
-  "name": "Mod Template",
+  "id": "weatherradiusextended",
+  "name": "Weather Radius Extended",
   "version": "${version}",
   "authors": ["VesMaybeVesper"],
   "contact": {
     "sources": "",
     "issues": ""
   },
-  "description": "A Mod Description",
+  "description": "Increases the allowed radius of weather particles",
   "icon": "assets/icon.png",
   "license": "MIT",
   "environment": "*",
-  "accessWidener": "modtemplate.accesswidener",
+  "accessWidener": "weatherradiusextended.accesswidener",
   "entrypoints": {
     "main": [
-      "dev.vesper.modtemplate.fabric.FabricEntrypoint"
+      "dev.vesper.weatherradiusextended.fabric.FabricEntrypoint"
     ],
     "client": [
-      "dev.vesper.modtemplate.fabric.FabricClientEntrypoint"
-    ],
-    "fabric-datagen": [
-      "dev.vesper.modtemplate.fabric.datagen.FabricDataGeneratorEntrypoint"
+      "dev.vesper.weatherradiusextended.fabric.FabricClientEntrypoint"
     ]
   },
   "mixins": [
-    "modtemplate.mixins.json"
+    "weatherradiusextended.mixins.json"
   ],
   "depends": {
-    "fabric-api": "*"
   }
 }

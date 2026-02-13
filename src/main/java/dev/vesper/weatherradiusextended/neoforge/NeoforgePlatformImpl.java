@@ -1,7 +1,7 @@
-package dev.vesper.modtemplate.neoforge;
+package dev.vesper.weatherradiusextended.neoforge;
 
 //? neoforge {
-/*import dev.spagurder.modtemplate.Platform;
+/*import dev.vesper.weatherradiusextended.Platform;
 import net.neoforged.fml.ModList;
 
 public class NeoforgePlatformImpl implements Platform {

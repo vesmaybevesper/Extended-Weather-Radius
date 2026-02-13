@@ -1,10 +1,10 @@
-package dev.vesper.modtemplate;
+package dev.vesper.weatherradiusextended;
 
 //? fabric {
-import dev.vesper.modtemplate.fabric.FabricPlatformImpl;
+import dev.vesper.weatherradiusextended.fabric.FabricPlatformImpl;
 //?}
 //? neoforge {
-/*import dev.spagurder.modtemplate.neoforge.NeoforgePlatformImpl;
+/*import dev.vesper.weatherradiusextended.neoforge.NeoforgePlatformImpl;
 *///?}
 
 public interface Platform {
