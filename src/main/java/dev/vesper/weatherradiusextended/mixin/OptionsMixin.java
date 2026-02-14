@@ -35,7 +35,7 @@ public abstract class OptionsMixin {
     private static Component GRAPHICS_TOOLTIP_WEATHER_RADIUS;
 
     @Inject(method = "<init>", at = @At("RETURN"))
-    private void afterInit(Minecraft minecraft, File file, CallbackInfo ci) {
+    private void EWR$init$return(Minecraft minecraft, File file, CallbackInfo ci) {
         this.weatherRadius = new OptionInstance<>("options.weatherRadius", OptionInstance.cachedConstantTooltip(GRAPHICS_TOOLTIP_WEATHER_RADIUS), (component, integer) ->
                 genericValueLabel(component, Component.translatable("options.blocks", new Object[]{integer})), new OptionInstance.IntRange(3, 15, true), 10, (integer) -> this.setGraphicsPresetToCustom());
     }
