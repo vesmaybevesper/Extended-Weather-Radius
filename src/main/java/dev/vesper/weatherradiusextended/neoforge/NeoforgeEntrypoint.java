@@ -9,7 +9,7 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 
 @Mod(WeatherRadiusExtended.MOD_ID)
-@EventBusSubscriber // sample_content
+@EventBusSubscriber
 public class NeoforgeEntrypoint {
 
     public NeoforgeEntrypoint() {
