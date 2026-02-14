@@ -5,7 +5,7 @@ import org.slf4j.LoggerFactory;
 
 public class WeatherRadiusExtended {
 
-    public static final String MOD_ID = "EWR";
+    public static final String MOD_ID = "ewr";
     public static final Logger LOG = LoggerFactory.getLogger(MOD_ID);
 
     public static void init() {

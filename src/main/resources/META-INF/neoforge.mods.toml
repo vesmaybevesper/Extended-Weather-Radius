@@ -3,7 +3,7 @@ loaderVersion = "[2,)"
 license = "MIT"
 
 [[mods]]
-modId = "weatherradiusextended"
+modId = "ewr"
 displayName = "Weather Radius Extended"
 version = "${version}"
 displayURL = ""
@@ -14,13 +14,13 @@ description = '''Increases the allowed radius of weather particles'''
 [[mixins]]
 config = "weatherradiusextended.mixins.json"
 
-[[dependencies.weatherradiusextended]]
+[[dependencies.ewr]]
 modId = "neoforge"
 type = "required"
 versionRange = "[1,)"
 ordering = "NONE"
 side = "CLIENT"
 
-[[dependencies.weatherradiusextended]]
+[[dependencies.ewr]]
 modId = "minecraft"
 type = "required"
