@@ -79,7 +79,7 @@ val additionalVersions: List<String> = additionalVersionsStr
 publishMods {
     file = tasks.jar.map { it.archiveFile.get() }
 
-    type = BETA
+    type = STABLE
     displayName = "${property("mod.name")} ${property("mod.version")} for ${stonecutter.current.version} Fabric"
     version = "${property("mod.version")}+${property("deps.minecraft")}-fabric"
     changelog = provider { rootProject.file("CHANGELOG.md").readText() }
@@ -87,7 +87,7 @@ publishMods {
 
     modrinth {
         projectId = property("publish.modrinth") as String
-        accessToken = env.MODRINTH_API_KEY.orNull()
+        accessToken = env.MODRINTH_API_TOKEN.orNull()
         minecraftVersions.add(stonecutter.current.version)
         minecraftVersions.addAll(additionalVersions)
         requires("fabric-api")
@@ -95,7 +95,7 @@ publishMods {
 
     curseforge {
         projectId = property("publish.curseforge") as String
-        accessToken = env.CURSEFORGE_API_KEY.orNull()
+        accessToken = env.CURSEFORGE_API_TOKEN.orNull()
         minecraftVersions.add(stonecutter.current.version)
         minecraftVersions.addAll(additionalVersions)
         requires("fabric-api")
